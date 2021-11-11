@@ -188,6 +188,3 @@ map_data("world") %>%
   theme_map() +
   labs(fill = "Net forest change per person (2010)")
 ```
-
-
-```{r}
