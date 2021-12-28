@@ -28,3 +28,10 @@ São 6 datasets, cada um tratando de aspectos diferentes do desmatamento, como: 
 + Vegetable Oil
 + Soybean Use
 + Population
+
+## Tratamento dos Dados
+Modelos de regressão são muito sensíveis a outliers, portanto, é necessário ver como esse dados se comportam. Logo, boxplot é uma ótima ferramenta para detectar esses pontos fora da curva.
+
+![boxplot](https://user-images.githubusercontent.com/34286550/147579599-880a3fe2-c6e4-4214-83da-94343070255e.png)
+
+
