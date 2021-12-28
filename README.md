@@ -22,12 +22,12 @@ A previsão dos modelos apesar de errarem o tanto de desmatamento, acertou quase
 
 Os dados do desmatamento são retirados do site "Our World in Data", dos seus artigos sobre florestas e desmatamento. Esses textos foram importantes à análise exploratória, com perguntas chaves ao entendimento das informações e à busca do problema. Depois da exploração dos dados, foi feito um tratamento neles para aplicar modelos de regressão linear e fazer uma análise preditiva sobre o desmatamento.
 São 6 datasets, cada um tratando de aspectos diferentes do desmatamento, como: comportamento, causas e consquências. Os seis são;
-+ Forest
-+ Forest Area
-+ Brazil Loss
-+ Vegetable Oil
-+ Soybean Use
-+ Population
++ Forest;
++ Forest Area;
++ Brazil Loss;
++ Vegetable Oil;
++ Soybean Use;
++ Population;
 
 ### Tratamento dos Dados
 Modelos de regressão são muito sensíveis a outliers, portanto, é necessário ver como esse dados se comportam. Logo, boxplot é uma ótima ferramenta para detectar esses pontos fora da curva.
@@ -110,8 +110,15 @@ Juntando os dados mais relevantes ao desmatamento global, é formado o dataset c
   </tr>
 </table>
 
+O dataset tem 260 linhas e os preditores para prever a Conversão líquida de floresta são: área, população e produção de óleo.
 
+## Removendo os outliers
+Devido a pouca quantidade de dados, além dos outliers não poderem ser removidos de maneira qualquer, será necessário uma normalização pela população de cada país. Isso é um procedimento padrão quando se trata de nações, o modelo irá prever o desmatamento por pessoa. Com essa normalização, os dados são bem mais comportados, como mostra o boxplot abaixo. 
 
+![boxplot2](https://user-images.githubusercontent.com/34286550/147586789-d5c9d755-7fb9-4ed9-96ff-7e0074d5e473.png)
 
+Apesar de serem mais comportados em questão de outliers, os dados continuam bem difíceis para modelos de regressão e sobraram 234 linhas na matriz.
 
+![scatter](https://user-images.githubusercontent.com/34286550/147586817-5d4091cd-9fe7-45f0-aab1-ce39d12985bb.png)
 
+### Análise mono e bi-variada
