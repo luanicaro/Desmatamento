@@ -69,4 +69,49 @@ Na produção de soja, China e Estados Unidos são os que mais produzem e não p
 
 A produção de óleos é bem mais relevante ao desmatamento, considerando que vários dos países que mais desmatam tem uma alta produção de óleos vegetais.
 
+### Definindo os preditores
+Juntando os dados mais relevantes ao desmatamento global, é formado o dataset com: Conversão líquida de floresta, área, população e produção de óleo.
+<table>
+  <tr>
+    <td>Entidade</td>
+    <td>Código</td>
+    <td>Ano</td>
+    <td>Conversão líquida de floresta</td>
+    <td>Área %</td>
+    <td>População</td>
+    <td>Produção de óleo(toneladas)</td>
+  </tr>
+  <tr>
+    <td>Russia</td>
+    <td>RUS</td>
+    <td>2010</td>
+    <td>-41030</td>
+    <td>19.85</td>
+    <td>142849468</td>
+    <td>3007851</td>
+  </tr>
+  <tr>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+    <td>...</td>
+  </tr>
+  <tr>
+    <td>Maldives</td>
+    <td>MDV</td>
+    <td>1990</td>
+    <td>0</td>
+    <td>0</td>
+    <td>223159</td>
+    <td>1224</td>
+  </tr>
+</table>
+
+
+
+
+
 
