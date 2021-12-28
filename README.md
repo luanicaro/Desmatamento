@@ -29,9 +29,44 @@ São 6 datasets, cada um tratando de aspectos diferentes do desmatamento, como: 
 + Soybean Use
 + Population
 
-## Tratamento dos Dados
+### Tratamento dos Dados
 Modelos de regressão são muito sensíveis a outliers, portanto, é necessário ver como esse dados se comportam. Logo, boxplot é uma ótima ferramenta para detectar esses pontos fora da curva.
 
 ![boxplot](https://user-images.githubusercontent.com/34286550/147579599-880a3fe2-c6e4-4214-83da-94343070255e.png)
+
+Percebe-se que os dados não são muito comportados, mas não é tão simples remover os outliers do dataset. Isso porque, caso ocorra essa remoção de maneira qualquer, essas informações não representariam a verdade sobre o desmatamento. Os únicos valores que poderão ser removidos são os "Not a Number"(NaN).
+
+### Quais os países com maior área de floresta?
+
+O gráfico em área, mostra a porcentagem global de floresta dos países. Poucas entidades contém certa de 67\% das florestas do mundo.
+
+![área](https://user-images.githubusercontent.com/34286550/147583630-05dac3af-9d95-47fb-a88d-e2e3e2e0d2e4.png)
+
+### Quanto desmatamento acontece?
+
+![Desmatamento](https://user-images.githubusercontent.com/34286550/147583871-72bd9dc7-3282-48f8-99a4-096a7fa9db3d.png)
+
+O desmatamento do mundo acontece na casa de milhões de hectares por ano e o país que mais desmata é o **Brasil**.
+
+### Porque o Brasil? Como? 
+
+O Brasil é o foco do desmatamento no mundo, porque é segundo país no rank com mais área de floresta, tem um clima ameno e tem leis menos punitivas ao desmatamento que em outras nações.
+
+![brazil_loss](https://user-images.githubusercontent.com/34286550/147583977-ac6de553-e47f-44d4-b5dd-d35b8ce77ef1.png)
+
+O principal causador da destrução das florestas brasileiras são os pastos.
+
+### Produção de soja de vários países.
+
+
+![soja](https://user-images.githubusercontent.com/34286550/147584049-589c4821-2367-4480-a916-b94747b1e8bc.png)
+
+Na produção de soja, China e Estados Unidos são os que mais produzem e não perdem floresta. Além disso, os países que mais desmatam não tem produção de soja, apenas o Brasil, cujas plantações são o que menos causam desmatamento. Então, a produção de soja não é um fator relevante ao desflorestamento mundial. 
+
+### Produção de óleos vegetais
+
+![óleos](https://user-images.githubusercontent.com/34286550/147584353-691c51dc-74aa-4123-9ee1-9c090b479c26.png)
+
+A produção de óleos é bem mais relevante ao desmatamento, considerando que vários dos países que mais desmatam tem uma alta produção de óleos vegetais.
 
 
