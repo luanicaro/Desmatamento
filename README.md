@@ -113,7 +113,7 @@ Juntando os dados mais relevantes ao desmatamento global, é formado o dataset c
 O dataset tem 260 linhas e os preditores para prever a Conversão líquida de floresta são: área, população e produção de óleo.
 
 ## Removendo os outliers
-Devido a pouca quantidade de dados, além dos outliers não poderem ser removidos de maneira qualquer, será necessário uma normalização pela população de cada país. Isso é um procedimento padrão quando se trata de nações, o modelo irá prever o desmatamento por pessoa. Com essa normalização, os dados são bem mais comportados, como mostra o boxplot abaixo. 
+Devido a pouca quantidade de dados, além dos outliers não poderem ser removidos de maneira qualquer, será necessário uma normalização pela população de cada país. Isso é um procedimento padrão quando se trata de nações, o modelo irá prever o desmatamento por pessoa. Com essa normalização, os dados são bem mais comportados, como mostra o boxplot abaixo, então os outliers poderão ser removidos. 
 
 ![boxplot2](https://user-images.githubusercontent.com/34286550/147586789-d5c9d755-7fb9-4ed9-96ff-7e0074d5e473.png)
 
@@ -122,3 +122,40 @@ Apesar de serem mais comportados em questão de outliers, os dados continuam bem
 ![scatter](https://user-images.githubusercontent.com/34286550/147586817-5d4091cd-9fe7-45f0-aab1-ce39d12985bb.png)
 
 ### Análise mono e bi-variada
+
+Depois de definir os preditores e remover os outliers, é necessário fazer uma análise estatística para ver como os dados se comportam e o tipo de tratamento necessário para eles.
+
+![Captura de tela de 2021-12-28 15-35-13](https://user-images.githubusercontent.com/34286550/147598407-8d9c1dc0-b2a3-4e85-a0fe-074e214982dc.png)
+
+Os valores de distorção mostrados na tabela são bem altos, então uma transformação nesses dados se torna necessária. Nos dados com valores positivos, é aplicada uma transformação logarítmica para corrigir a distorção. Já na conversão líquida de floresta, como os valores são negativos, uma transformação Yeo-Johnson deve ser aplicada.
+
+A figura é um plot de pares das colunas do dataset principal. A diagonal mostra o histograma dos dados que sofreram uma transformação logarítmica. Os outros plots são apenas um scatterplot de como uma informação se relaciona a outra.
+
+![análise png](https://user-images.githubusercontent.com/34286550/147599572-90bfed42-65c7-4bf9-a718-7e5009614e91.png)
+
+### Matriz de correlação
+
+A matriz de correlação diz quanto uma coluna da matriz está correlacionada com outra. Isso é importante porque caso existam colunas altamente correlacionadas, não será possível fazer a regressão linear. X é a matriz de preditores e y é matriz de saída.
+
+![CodeCogsEqn (2)](https://user-images.githubusercontent.com/34286550/147600234-720df73e-f323-4ed8-84a3-af99698c2405.png)
+
+A equação acima é a regressão linear em notação matricial. Essa fórmula mostra porque não é possível fazer a regressão quando as colunas são altamente correlacionadas, pois o produto abaixo não é invertível.
+
+![CodeCogsEqn (3)](https://user-images.githubusercontent.com/34286550/147601140-346c501c-1fb1-467b-9d90-d0237ac1bc70.png)
+
+A matriz de correlação dos preditores do desmatamento:
+
+![Captura de tela de 2021-12-28 16-38-19](https://user-images.githubusercontent.com/34286550/147601247-19b88c85-16dc-46bd-a935-b2f64a6f60ca.png)
+
+## PCA (Principal Component Analysis)
+
+É importante ressaltar que cada coluna de uma matriz é uma dimensão dessa matriz, assim é impossivel visualizar os dados da matriz quando existem mais de 3 colunas. Então, a PCA (Principal Component Analysis) é um método para resolver esse problema de visualização. Isso porque, a PCA analísa as colunas e mantém as duas com maior variância, porque preserva as informações originais dos dados e cria uma visualização fidedigna da matriz original.
+
+
+![newplot](https://user-images.githubusercontent.com/34286550/147601659-b29b5147-91c3-41b8-9598-b718d46d2c2c.png)
+
+O eixo 0 é a Área de floresta e o eixo 1 é a produção de óleo.
+
+
+
+
