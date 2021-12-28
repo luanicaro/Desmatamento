@@ -171,11 +171,12 @@ Como os dados são uma série temporal do desmatamento, os dados de teste e de t
 
 Devido aos dados não serem adequados às regressões, os modelos não foram capazes de se adequar devidamente e todos tiveram os mesmos resultados:
 
-![CodeCogsEqn (4)](https://user-images.githubusercontent.com/34286550/147603060-6d98d3c4-eeaf-4c49-935a-0efe486ba45a.png)
+![CodeCogsEqn (9)](https://user-images.githubusercontent.com/34286550/147604064-bf03cab4-2198-46f3-9e62-46776992353d.png)
 
-![CodeCogsEqn (5)](https://user-images.githubusercontent.com/34286550/147603069-7dd24765-c274-461e-91f2-804cece673a5.png)
+![CodeCogsEqn (10)](https://user-images.githubusercontent.com/34286550/147604148-6e73dd9e-852c-457b-809a-6a387fd05b65.png)
 
-![CodeCogsEqn (6)](https://user-images.githubusercontent.com/34286550/147603079-203765c0-8a63-450d-9753-d0c8fa4f62a8.png)
+![CodeCogsEqn (11)](https://user-images.githubusercontent.com/34286550/147604127-60537ae6-bc71-400b-9fd8-e8a8e3c19a5b.png)
+
 
 ### Plot da regressão
 
