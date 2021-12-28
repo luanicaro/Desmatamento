@@ -156,6 +156,43 @@ A matriz de correlação dos preditores do desmatamento:
 
 O eixo 0 é a Área de floresta e o eixo 1 é a produção de óleo.
 
+A PCA escolheu como componentes principais a área de floresta e a produção de óleo. Portanto, esses preditores irão à regressão linear.
+
+#### Variancia
+
+![variancia](https://user-images.githubusercontent.com/34286550/147602299-507213c3-530e-4565-aa01-1213fbf016d5.png)
+
+Somente com duas componentes os dados tem quase 100% de variância. 
+
+# Resultados
+
+Após todo o pré-processamento de dados e a aplicação da PCA, é possível aplicar modelos de regressão linear. Serão aplicados os modelos OLS(Ordinary Least Squares) regression, Ridge regression e PLS(Partial Least Squares) regression.
+Como os dados são uma série temporal do desmatamento, os dados de teste e de treino foram separados pelo tempo. Foram separados os dados de 1990 e 2000 para prever o desmatamento por pessoa de 2010.
+
+Devido aos dados não serem adequados às regressões, os modelos não foram capazes de se adequar devidamente e todos tiveram os mesmos resultados:
+
+![CodeCogsEqn (4)](https://user-images.githubusercontent.com/34286550/147603060-6d98d3c4-eeaf-4c49-935a-0efe486ba45a.png)
+
+![CodeCogsEqn (5)](https://user-images.githubusercontent.com/34286550/147603069-7dd24765-c274-461e-91f2-804cece673a5.png)
+
+![CodeCogsEqn (6)](https://user-images.githubusercontent.com/34286550/147603079-203765c0-8a63-450d-9753-d0c8fa4f62a8.png)
+
+### Plot da regressão
+
+![regressao](https://user-images.githubusercontent.com/34286550/147603213-a31b7946-212a-49c6-b0ab-a38501aacf90.png)
+
+### Mapas 
+
+O desmatamento por pessoa que aconteceu em 2010:
+
+![mapaprevisto](https://user-images.githubusercontent.com/34286550/147576228-de33a856-08d9-4d22-bd24-139ea2f1fb50.png)
 
 
+O resultado das regressões:
+
+![desmatamentoprevisto](https://user-images.githubusercontent.com/34286550/147576031-fb6e6097-4478-4fad-b937-aae1ea3dbff8.png)
+
+# Conclusão
+
+Os dados foram bem desafiadores para o modelo de regressão devido sua quantidade de outliers e a pouca quantidade de linhas na matriz. Os modelos tiveram perfomances iguais apesar de usarem métodos diferentes e talvez para esse dataset um modelo robusto contra outliers possa ter um resultado bem melhor. Por fim, a regressão foi capaz de acertar a maior parte dos locais que ocorrem desmatamento.
 
