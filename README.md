@@ -137,11 +137,11 @@ A figura é um plot de pares das colunas do dataset principal. A diagonal mostra
 
 A matriz de correlação diz quanto uma coluna da matriz está correlacionada com outra. Isso é importante porque caso existam colunas altamente correlacionadas, não será possível fazer a regressão linear. X é a matriz de preditores e y é matriz de saída.
 
-![CodeCogsEqn (2)](https://user-images.githubusercontent.com/34286550/147600234-720df73e-f323-4ed8-84a3-af99698c2405.png)
+![CodeCogsEqn (7)](https://user-images.githubusercontent.com/34286550/147603935-e9075d58-e495-45be-a6ed-37252f31ace6.png)
 
 A equação acima é a regressão linear em notação matricial. Essa fórmula mostra porque não é possível fazer a regressão quando as colunas são altamente correlacionadas, pois o produto abaixo não é invertível.
 
-![CodeCogsEqn (3)](https://user-images.githubusercontent.com/34286550/147601140-346c501c-1fb1-467b-9d90-d0237ac1bc70.png)
+![CodeCogsEqn (8)](https://user-images.githubusercontent.com/34286550/147603983-b1002974-9637-46ff-8765-d19be64ba940.png)
 
 A matriz de correlação dos preditores do desmatamento:
 
