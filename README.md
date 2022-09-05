@@ -195,5 +195,5 @@ O resultado das regressões:
 
 # Conclusão
 
-Os dados foram bem desafiadores para o modelo de regressão devido sua quantidade de outliers e a pouca quantidade de linhas na matriz. Os modelos tiveram perfomances iguais apesar de usarem métodos diferentes e talvez para esse dataset um modelo robusto contra outliers possa ter um resultado bem melhor. Por fim, a regressão foi capaz de acertar a maior parte dos locais que ocorrem desmatamento.
+Os dados foram bem desafiadores para o modelo de regressão devido sua quantidade de outliers e a pouca quantidade de linhas na matriz. Os modelos tiveram perfomances iguais apesar de usarem métodos diferentes e, talvez, para esse dataset um modelo robusto contra outliers possa ter um resultado bem melhor. Por fim, a regressão foi capaz de acertar a maior parte dos locais que ocorrem desmatamento.
 
